@@ -24,7 +24,7 @@ To create a new custom element,
 var element = createCustomElement( 'my-element-name' );
 ```
 
-where `my-element-name` is the custom element name. A name must start with `a-z`, contain a hyphen `-`, and be alphanumeric. For additional naming rules, see [validate-element-name](https://github.com/sindresorhus/validate-element-name) and its associated source code.
+where `my-element-name` is the [custom element name](http://www.w3.org/TR/custom-elements/#dfn-custom-element-type). A name must start with `a-z`, contain a hyphen `-`, and be alphanumeric. For additional naming rules, see [validate-element-name](https://github.com/sindresorhus/validate-element-name) and its associated source code.
 
 The `element` instance has the following methods...
 
