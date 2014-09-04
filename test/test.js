@@ -76,11 +76,11 @@ describe( 'minimal-custom-element', function tests() {
 		assert.ok( element instanceof Element );
 	});
 
-	it( 'should provide a method to get/set an element\'s void status', function test() {
-		expect( element.void ).to.be.a( 'function' );
+	it( 'should provide a method to get/set an element\'s self-closing status', function test() {
+		expect( element.selfClosing ).to.be.a( 'function' );
 	});
 
-	it( 'should not allow a non-boolean void status', function test() {
+	it( 'should not allow a non-boolean self-closing status', function test() {
 		var values = [
 				5,
 				'5',
@@ -98,14 +98,14 @@ describe( 'minimal-custom-element', function tests() {
 
 		function badValue( value ) {
 			return function() {
-				element.void( value );
+				element.selfClosing( value );
 			};
 		}
 	});
 
-	it( 'should set an element\'s void status', function test() {
-		element.void( true );
-		assert.strictEqual( element.void(), true );
+	it( 'should set an element\'s self-closing status', function test() {
+		element.selfClosing( true );
+		assert.strictEqual( element.selfClosing(), true );
 	});
 
 });

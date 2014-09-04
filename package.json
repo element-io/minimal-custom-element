@@ -33,7 +33,7 @@
     "url": "https://github.com/element-io/minimal-custom-element/issues"
   },
   "dependencies": {
-    "minimal-element-class": "~1.0.0",
+    "minimal-element-class": "~2.0.0",
     "validate-element-name": "^1.0.0"
   },
   "devDependencies": {

@@ -49,17 +49,19 @@ element.attr();
 Note: to set an attribute `value`, the `value` must be either a `string`, `boolean`, or `number`.
 
 
-#### element.void( [bool] )
+#### element.selfClosing( [bool] )
 
-This method is a setter/getter. If no `boolean` is provided, returns a `boolean` indicating if an element is a [void element](http://www.w3.org/TR/html-markup/syntax.html). If a `boolean` is provided, sets whether an `element` should be considered a void element. To set the void status,
+This method is a setter/getter. If no `boolean` is provided, returns a `boolean` indicating if an element is a [self-closing element](http://www.w3.org/html/wg/drafts/html/master/syntax.html#elements-0). If a `boolean` is provided, sets whether an `element` should be considered a self-closing element. To set the self-closing status,
 
 ``` javascript
-element.void( true );
+element.selfClosing( true );
 ```
 
-#### element.append( node )
+By default, custom elements are assumed to __not__ be self-closing; i.e., they have end-tags.
 
-Appends a node ([Element](https://github.com/element-io/element) or [Text](https://github.com/element-io/text) instance) to an `element`. If the `element` is a [void element](http://www.w3.org/TR/html-markup/syntax.html), this method will throw an `Error`.
+#### element.append( element )
+
+Appends another element ([Element](https://github.com/element-io/element) or [Text](https://github.com/element-io/text) instance) to an `element`. If the `element` is a [self-closing element](http://www.w3.org/TR/html-markup/syntax.html), this method will throw an `Error`.
 
 ``` javascript
 var el = createCustomElement( 'xfig-chart' );
