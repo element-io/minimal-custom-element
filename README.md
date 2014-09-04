@@ -61,7 +61,7 @@ By default, custom elements are assumed to __not__ be self-closing; i.e., they h
 
 #### element.append( element )
 
-Appends another element ([Element](https://github.com/element-io/element) or [Text](https://github.com/element-io/text) instance) to an `element`. If the `element` is a [self-closing element](http://www.w3.org/TR/html-markup/syntax.html), this method will throw an `Error`.
+Appends another element ([Element](https://github.com/element-io/element) or [Text](https://github.com/element-io/text) instance) to an `element`. If the `element` is a [self-closing element](http://www.w3.org/html/wg/drafts/html/master/syntax.html#elements-0), this method will throw an `Error`.
 
 ``` javascript
 var el = createCustomElement( 'xfig-chart' );
