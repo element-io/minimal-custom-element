@@ -1,6 +1,6 @@
 {
   "name": "minimal-custom-element",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Factory for creating minimal custom elements.",
   "author": {
     "name": "Athan Reines",
