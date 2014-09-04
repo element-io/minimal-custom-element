@@ -24,7 +24,7 @@ To create a new custom element,
 var element = createCustomElement( 'my-element-name' );
 ```
 
-where `my-element-name` is the custom element name. A name must start with `a-z`, contain a hyphen `-`, and be alphanumeric. For additional naming rules, see [validate-element-name](https://github.com/sindresorhus/validate-element-name) and its associated source code. 
+where `my-element-name` is the custom element name. A name must start with `a-z`, contain a hyphen `-`, and be alphanumeric. For additional naming rules, see [validate-element-name](https://github.com/sindresorhus/validate-element-name) and its associated source code.
 
 The `element` instance has the following methods...
 
@@ -51,7 +51,7 @@ Note: to set an attribute `value`, the `value` must be either a `string`, `boole
 
 #### element.void( [bool] )
 
-This method is a setter/getter. If a `boolean` is not provided, returns a `boolean` indicating if an element is a [void element](http://www.w3.org/TR/html-markup/syntax.html). If a `boolean` is provided, sets whether an `element` should be considered a void element. To set the void status,
+This method is a setter/getter. If no `boolean` is provided, returns a `boolean` indicating if an element is a [void element](http://www.w3.org/TR/html-markup/syntax.html). If a `boolean` is provided, sets whether an `element` should be considered a void element. To set the void status,
 
 ``` javascript
 element.void( true );
