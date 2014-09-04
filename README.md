@@ -2,7 +2,7 @@ Minimal Custom Elements
 =======================
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage][coveralls-image]][coveralls-url] [![Dependencies][dependencies-image]][dependencies-url]
 
-> Factory for creating minimal custom elements.
+> Factory for creating minimal [custom elements](http://www.html5rocks.com/en/tutorials/webcomponents/customelements/).
 
 
 ## Installation
@@ -21,8 +21,10 @@ var createCustomElement = require( 'minimal-custom-element' );
 To create a new custom element,
 
 ``` javascript
-var element = createCustomElement( 'xfig-figure' );
+var element = createCustomElement( 'my-element-name' );
 ```
+
+where `my-element-name` is the custom element name. A name must start with `a-z`, contain a hyphen `-`, and be alphanumeric. For additional naming rules, see [validate-element-name](https://github.com/sindresorhus/validate-element-name) and its associated source code. 
 
 The `element` instance has the following methods...
 
